@@ -23,9 +23,33 @@ class myElement extends HTMLElement {
 getStyles(){
     return `
     <style>
-    h2 {
-        color: red;
-    }
+   :host {
+    display: inline-block;
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    font-size: 20px;
+    color: white;
+    background: black;
+   }
+   :host(.blue){
+    color: white;
+    font-size: 20px;
+    background: blue;
+   }
+   :host([yellow]){
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+   }
+   :host([yellow]) h2 {
+    color: red;
+   }
+   :host-context(article.card){
+    background-color: orange;
+    display: block;
+    max-width:100%;
+   }
     </style>
     `
 }

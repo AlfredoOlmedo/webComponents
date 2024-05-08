@@ -12,6 +12,20 @@
         <span slot="title">Titulo</span>
         <span slot="paraph">Parrafo</span>
     </my-element>
-    <script type="module" src="/Slot/my-element.js"></script>
+    <my-element class="blue">
+        <span slot="title">Titulo 2</span>
+        <span slot="paraph">Parrafo 2</span>
+    </my-element>
+    <my-element yellow>
+        <span slot="title">Titulo 3</span>
+        <span slot="paraph">Parrafo 3</span>
+    </my-element>
+    <article class="card">
+        <my-element yellow>
+            <span slot="title">Titulo 3</span>
+            <span slot="paraph">Parrafo 3</span>
+        </my-element>
+    </article>
+    <script type="module" src="../host/my-element.js"></script>
 </body>
 </html>
