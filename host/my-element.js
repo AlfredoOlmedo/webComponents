@@ -21,7 +21,8 @@ class myElement extends HTMLElement {
     return template
 }   
 getStyles(){
-    return `
+    return
+    `
     <style>
    :host {
     display: inline-block;

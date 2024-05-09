@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Elements</title>
+    <style>
+        my-element {
+            --primary-color: blue;
+            --heading-primary: 40px;
+        }
+        .segundo {
+            --secondary-color: red;
+            --heading-secondary: green;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="title">Slot</h1>
+
+    <my-element>
+        <span slot="title">Titulo</span>
+        <span slot="paraph">Parrafo</span>
+    </my-element>
+    <my-element class="segundo">
+        <span slot="title">Titulo 2</span>
+        <span slot="paraph">Parrafo 2</span>
+    </my-element>
+    <script type="module" src="../customProperties/my-element.js"></script>
+</body>
+</html>
